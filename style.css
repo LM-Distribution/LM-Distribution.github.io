@@ -483,7 +483,7 @@ footer {
         width: 2em;
     }
 
-    .contact p {
+    .contact p, .contact a {
         font-size: 1em;
     }
 
