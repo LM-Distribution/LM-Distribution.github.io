@@ -81,11 +81,12 @@ a {
     justify-content: center;
     align-items: center;
     width: auto;
+    height: auto;
     text-align: center;
 }
 
 .home-title {
-    font-size: 5vw;
+    font-size: 8vh;
     font-weight: 800;
     text-align: center;
     margin: 1em;
@@ -288,8 +289,12 @@ a {
     border-radius: 10px;
 }
 
-.card-description p {
-    margin-top: 1em;
+.card-description-icon {
+    font-size: 2em;
+}
+
+.card-description-text {
+    font-size: auto;
 }
 
 footer {
@@ -332,7 +337,8 @@ footer {
     filter: invert(51%) sepia(83%) saturate(374%) hue-rotate(132deg) brightness(83%) contrast(82%);
 }
 
-.contact p {
+.contact p, .contact a {
+    color: white;
     font-size: 1.5em;
     margin: auto;
 }
@@ -343,6 +349,23 @@ footer {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    #home-section {
+        height: 900px;
+    }
+
+    .home-title {
+        font-size: 8vw;
+    }
+    .card-description-icon {
+        font-size: 1em;
+    }
+
+    .distrib-container {
+        height: 900px;
     }
 }
 
