@@ -440,11 +440,15 @@ footer {
     .distrib-title {
         height: 3em;
         font-size: 1.5em;
-        margin: 1em 0 1em 0;
+        margin: 1em 0 2em 0;
     }
     
     .distrib-container {
         height: auto;
+    }
+
+    .other-distrib-title {
+        margin: 1em 0 1em 0;
     }
 
     .distrib-content {
