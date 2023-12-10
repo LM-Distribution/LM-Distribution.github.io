@@ -4,6 +4,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const description = document.querySelectorAll('.distrib-description');
     const totalSlides = slides.length;
     const indicatorsContainer = document.getElementById('indicators');
+    const distribTitle1 = document.getElementById('distrib-title-1');
+    const distribTitle2 = document.getElementById('distrib-title-2');
+    const distribContainer = document.getElementById('distrib-content');
+    const otherDistribContainer = document.getElementById('other-distrib-content');
+
+    distribTitle1.addEventListener('click', () => {
+        distribTitle1.classList.add('active');
+        distribTitle2.classList.remove('active');
+
+        otherDistribContainer.style.display = 'none';
+        distribContainer.style.display = 'flex';
+        indicatorsContainer.style.display = 'flex';
+    });
+
+    distribTitle2.addEventListener('click', () => {
+        distribTitle2.classList.add('active');
+        distribTitle1.classList.remove('active');
+
+        distribContainer.style.display = 'none';
+        indicatorsContainer.style.display = 'none';
+        otherDistribContainer.style.display = 'flex';
+    });
 
     function showSlide(index) {
         slides.forEach((slide, i) => {

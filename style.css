@@ -133,9 +133,76 @@ a {
     height: 20%;
     text-align: center;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.7vw;
     color: var(--primary-color);
     z-index: 1000;
+}
+
+.distrib-title p {
+    margin: 0 1em 0 1em;
+    cursor: pointer;
+}
+
+.distrib-title p:hover {
+    color: var(--primary-color);
+}
+
+.distrib-title p.active {
+    color: var(--primary-color);
+}
+
+.distrib-title {
+    color: #2650737e;
+}
+
+.other-distrib-content {
+    display: none;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.other-distrib-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    color: #333;
+}
+
+.other-distrib-description.card-1 {
+    /* background-image: url(img/piscine-img.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+.other-distrib-description.card-2 {
+    /* background-image: url(img/parapharmacie-img.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+.other-distrib-description.card-3 {
+    /* background-image: url(img/autres-equipements-img.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+.other-distrib-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 800;
+    height: 30%;
+}
+
+.other-distrib-text ul{
+    font-size: 1.5em;
+    list-style: none;
 }
 
 .distrib-content {
@@ -372,6 +439,7 @@ footer {
 @media screen and (max-width: 1000px) {
     .distrib-title {
         height: 3em;
+        font-size: 1.5em;
         margin: 1em 0 1em 0;
     }
     
@@ -398,6 +466,13 @@ footer {
 
     .description-text ul{
         margin: 0;
+    }
+
+    .other-distrib-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2em;
     }
     
     .carousel-container {
